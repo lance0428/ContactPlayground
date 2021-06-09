@@ -14,9 +14,6 @@ import androidx.core.database.getStringOrNull
 import androidx.fragment.app.Fragment
 import com.example.contactplayground.databinding.FragmentWorkContactsBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class WorkContactsFragment : Fragment() {
 
     //https://developer.android.com/work/contacts

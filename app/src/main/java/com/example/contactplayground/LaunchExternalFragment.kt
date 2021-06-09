@@ -15,9 +15,6 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.contactplayground.databinding.FragmentLaunchExternalBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class LaunchExternalFragment : Fragment() {
 
     private lateinit var binding: FragmentLaunchExternalBinding

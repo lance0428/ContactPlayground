@@ -18,9 +18,6 @@ import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import com.example.contactplayground.databinding.FragmentContentUriBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class ContentUriFragment : Fragment() {
 
     private lateinit var cursorAdapter: SimpleCursorAdapter

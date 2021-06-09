@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_LaunchFragment_to_workContactsFragment"
             app:destination="@id/workContactsFragment" />
+        <action
+            android:id="@+id/action_LaunchFragment_to_emailFieldFragment"
+            app:destination="@id/emailFieldFragment" />
     </fragment>
 
     <fragment
@@ -47,4 +50,9 @@
         android:name="com.example.contactplayground.WorkContactsFragment"
         android:label="WorkContactsFragment"
         tools:layout="@layout/fragment_work_contacts" />
+    <fragment
+        android:id="@+id/emailFieldFragment"
+        android:name="com.example.contactplayground.EmailFieldFragment"
+        android:label="EmailFieldFragment"
+        tools:layout="@layout/fragment_email_field" />
 </navigation>

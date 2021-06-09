@@ -34,5 +34,8 @@ class LaunchFragment : Fragment() {
         binding.workContactsButtons.setOnClickListener {
             findNavController().navigate(R.id.action_LaunchFragment_to_workContactsFragment)
         }
+        binding.emailField.setOnClickListener {
+            findNavController().navigate(R.id.action_LaunchFragment_to_emailFieldFragment)
+        }
     }
 }
