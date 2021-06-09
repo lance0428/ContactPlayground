@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="text"
+        android:hint="CONTENT_URI"
         app:layout_constraintBottom_toTopOf="@+id/searchResults"
         app:layout_constraintEnd_toStartOf="@+id/searchButton"
         app:layout_constraintStart_toStartOf="parent"

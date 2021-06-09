@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".ContentUriFragment">
 
     <EditText
         android:id="@+id/searchText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:hint="CONTENT_FILTER_URI"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/searchResults"
         app:layout_constraintEnd_toStartOf="@+id/searchButton"

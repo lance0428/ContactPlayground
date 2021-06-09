@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_LaunchFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_LaunchFragment_to_contentFilterUriFragment"
+            app:destination="@id/contentFilterUriFragment" />
     </fragment>
 
     <fragment
@@ -22,4 +25,10 @@
         android:name="com.example.contactplayground.ContentUriFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_content_uri" />
+
+    <fragment
+        android:id="@+id/contentFilterUriFragment"
+        android:name="com.example.contactplayground.ContentFilterUriFragment"
+        android:label="ContentFilterUriFragment"
+        tools:layout="@layout/fragment_content_filter_uri" />
 </navigation>

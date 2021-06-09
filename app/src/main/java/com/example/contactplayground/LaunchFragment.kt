@@ -25,5 +25,8 @@ class LaunchFragment : Fragment() {
         binding.contentUriButton.setOnClickListener {
             findNavController().navigate(R.id.action_LaunchFragment_to_FirstFragment)
         }
+        binding.contentFilterUriButton.setOnClickListener {
+            findNavController().navigate(R.id.action_LaunchFragment_to_contentFilterUriFragment)
+        }
     }
 }
