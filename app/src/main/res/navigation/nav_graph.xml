@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_LaunchFragment_to_contentFilterUriFragment"
             app:destination="@id/contentFilterUriFragment" />
+        <action
+            android:id="@+id/action_LaunchFragment_to_launchExternalFragment"
+            app:destination="@id/launchExternalFragment" />
     </fragment>
 
     <fragment
@@ -31,4 +34,9 @@
         android:name="com.example.contactplayground.ContentFilterUriFragment"
         android:label="ContentFilterUriFragment"
         tools:layout="@layout/fragment_content_filter_uri" />
+    <fragment
+        android:id="@+id/launchExternalFragment"
+        android:name="com.example.contactplayground.LaunchExternalFragment"
+        android:label="LaunchExternalFragment"
+        tools:layout="@layout/fragment_launch_external" />
 </navigation>
