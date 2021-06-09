@@ -16,20 +16,17 @@ import androidx.fragment.app.Fragment
 import androidx.loader.app.LoaderManager
 import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
-import com.example.contactplayground.databinding.FragmentFirstBinding
+import com.example.contactplayground.databinding.FragmentContentUriBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class ContentUriFragment : Fragment() {
 
-    private var _binding: FragmentFirstBinding? = null
     private lateinit var cursorAdapter: SimpleCursorAdapter
     private val loadCallback = MyLoaderCallback()
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentContentUriBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +37,7 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        binding = FragmentContentUriBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -62,12 +59,7 @@ class FirstFragment : Fragment() {
         LoaderManager.getInstance(this).restartLoader(LOADER_ID, null, loadCallback)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-    val requestPermissionLauncher =
+    private val requestPermissionLauncher =
         registerForActivityResult(
             ActivityResultContracts.RequestPermission()
         ) { isGranted: Boolean ->
@@ -95,7 +87,8 @@ class FirstFragment : Fragment() {
                 // You can directly ask for the permission.
                 // The registered ActivityResultCallback gets the result of this request.
                 requestPermissionLauncher.launch(
-                    Manifest.permission.READ_CONTACTS)
+                    Manifest.permission.READ_CONTACTS
+                )
             }
         }
     }

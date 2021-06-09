@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.contactplayground.FirstFragment"
+        android:name="com.example.contactplayground.ContentUriFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_content_uri" />
 </navigation>

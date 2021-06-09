@@ -10,22 +10,13 @@ import com.example.contactplayground.databinding.FragmentLaunchBinding
 
 class LaunchFragment : Fragment() {
 
-    private var _binding: FragmentLaunchBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-//        LoaderManager.getInstance(this).initLoader(LOADER_ID, null, loadCallback)
-    }
+    private lateinit var binding: FragmentLaunchBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentLaunchBinding.inflate(inflater, container, false)
+        binding = FragmentLaunchBinding.inflate(inflater, container, false)
         return binding.root
     }
 
