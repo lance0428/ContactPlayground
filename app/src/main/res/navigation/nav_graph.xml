@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_LaunchFragment_to_launchExternalFragment"
             app:destination="@id/launchExternalFragment" />
+        <action
+            android:id="@+id/action_LaunchFragment_to_workContactsFragment"
+            app:destination="@id/workContactsFragment" />
     </fragment>
 
     <fragment
@@ -39,4 +42,9 @@
         android:name="com.example.contactplayground.LaunchExternalFragment"
         android:label="LaunchExternalFragment"
         tools:layout="@layout/fragment_launch_external" />
+    <fragment
+        android:id="@+id/workContactsFragment"
+        android:name="com.example.contactplayground.WorkContactsFragment"
+        android:label="WorkContactsFragment"
+        tools:layout="@layout/fragment_work_contacts" />
 </navigation>

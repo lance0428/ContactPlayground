@@ -25,4 +25,11 @@
         android:layout_gravity="center_horizontal"
         android:text="Launch External" />
 
+    <Button
+        android:id="@+id/workContactsButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Work Contacts" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

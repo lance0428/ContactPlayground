@@ -31,5 +31,8 @@ class LaunchFragment : Fragment() {
         binding.launchExternalButton.setOnClickListener {
             findNavController().navigate(R.id.action_LaunchFragment_to_launchExternalFragment)
         }
+        binding.workContactsButtons.setOnClickListener {
+            findNavController().navigate(R.id.action_LaunchFragment_to_workContactsFragment)
+        }
     }
 }
